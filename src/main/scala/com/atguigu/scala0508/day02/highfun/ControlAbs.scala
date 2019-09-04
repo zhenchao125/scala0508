@@ -6,27 +6,21 @@ package com.atguigu.scala0508.day02.highfun
   */
 object ControlAbs {
     def main(args: Array[String]): Unit = {
-        def f = () => {
+        /*def f = () => {
             println("f...")
             10
         }
         
         foo(f())
         
-        foo(3 + 4)
+        foo(3 + 4)*/
         
-        
-        while(true){
-            //...
+        foo {
+            println("aaaaa")
         }
-        
-        myWhile(i > 1){
-            //
-        }
-        
     }
     
-    def foo(a: => Int) = {
+    def foo(a: => Unit) = {
         println(a)
         println(a)
         println(a)
