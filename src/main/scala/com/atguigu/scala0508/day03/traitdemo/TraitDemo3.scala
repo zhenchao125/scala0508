@@ -24,6 +24,9 @@ trait T1 extends A1{
 
 class B1 extends A1 with T1
 
+
+
+
 /*
 
 1. trait 可以继承类
