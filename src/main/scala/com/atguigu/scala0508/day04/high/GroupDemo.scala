@@ -24,6 +24,8 @@ object GroupDemo {
             word -> kv._2.map(_._2).sum
         })
         println(temp1)
+    
+        println(Array(1, 2, 3).mkString(":"))
     }
 }
 
