@@ -1,9 +1,6 @@
 package com.atguigu.scala0508.day05.implicitdemo
 
-import java.io.File
 import java.time.LocalDate
-
-import scala.io.Source
 
 /**
   * Author lzc
@@ -17,22 +14,23 @@ object ImplicitDemo3 {
         
         println(10 days ago)
         println(2 days later)
+        
         //
     }
     
     
-    implicit class RichTime(day: Int){
-        def days(when:String): String ={
-            if(when == "ago"){
+    implicit class RichTime(day: Int) {
+        def days(when: String): String = {
+            if (when == "ago") {
                 LocalDate.now().minusDays(day).toString
                 
-            } else{
+            } else {
                 LocalDate.now().plusDays(day).toString
             }
         }
     }
+    
 }
-
 
 
 /*
@@ -44,4 +42,5 @@ object ImplicitDemo3 {
         其实是隐式转换函数的语法糖
     
     隐式参数和隐式值
+        他们配合使用
  */
