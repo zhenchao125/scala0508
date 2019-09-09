@@ -1,9 +1,6 @@
 package com.atguigu.scala0508.day05.implicitdemo
 
-import java.io.File
 import java.time.LocalDate
-
-import scala.io.Source
 
 /**
   * Author lzc
@@ -21,12 +18,11 @@ object ImplicitDemo3 {
     }
 }
 
-class RichTime(day: Int){
-    def days(when:String): String ={
-        if(when == "ago"){
+class RichTime(day: Int) {
+    def days(when: String): String = {
+        if (when == "ago") {
             LocalDate.now().minusDays(day).toString
-            
-        } else{
+        } else {
             LocalDate.now().plusDays(day).toString
         }
     }
