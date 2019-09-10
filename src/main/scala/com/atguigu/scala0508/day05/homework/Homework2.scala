@@ -6,12 +6,12 @@ import scala.io.Source
   * Author lzc
   * Date 2019-09-09 08:12
   */
-object Homework1 {
+object Homework2 {
     def main(args: Array[String]): Unit = {
         //        work1()
         //        work2()
         //        println(work3("Helloee"))
-        //        println(work4(List(1,2,3,4), "?"))
+//        println(work4(List(1,2,3,4), "?"))
         println(work5())
     }
     
@@ -21,7 +21,7 @@ object Homework1 {
         Source.*/
         val path = "C:\\Users\\lzc\\Desktop\\class_code\\2019_05_08\\01_scala\\scala0508\\src\\main\\scala\\com\\atguigu\\scala0508\\day05\\homework\\Homework1.scala"
         
-        val lines = Source.fromFile(path).getLines().toList
+        val lines= Source.fromFile(path).getLines().toList
         lines
             .flatMap(_.split("\\W+"))
             .filter(_.trim.length > 0)
@@ -40,7 +40,7 @@ object Homework1 {
             last + sep + s
         }).substring(sep.length)
         
-        //        list.head + list.tail.foldLeft("")(_ + sep + _)
+//        list.head + list.tail.foldLeft("")(_ + sep + _)
         
     }
     
